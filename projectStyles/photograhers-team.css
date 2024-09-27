@@ -1,0 +1,229 @@
+body{
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+.secondnavbar{
+    height: 90px;
+    width: 100%;
+    position:fixed;
+    top: 70px;
+    justify-content: center;
+    text-decoration:underline black;
+    box-shadow: 10px 5px 5px 5px rgb(136, 130, 130);
+    background-color: lightpink;
+    z-index: 1;
+}
+.sec-btn{
+    height: 80%;
+    width: 20%;
+    display:inline-block;
+    border: 1px solid transparent;
+    background: transparent;
+}
+.sec-btn:hover{
+    cursor: pointer;
+}
+.team-details-container{
+
+  
+    height: max-content;
+    width: 100%;
+    padding-top: 10px;
+    padding-bottom: 20px;
+    display: grid;
+    grid-template-columns: 500px;
+    margin-top: 165px;
+}
+.team{
+    height: 200px;
+    width: 250%;
+    max-width: 400%;
+    margin-left: 10px;
+    padding-top: 2px;
+    padding-bottom: 2px;
+    margin-top: 3px;
+    margin-bottom: 3px;
+    background-image: url(projectImages/bg2.jpeg);
+    background-size: cover;
+}
+.org-photo{
+    float: left;
+    height: 80px;
+    width: 80px;
+    margin: 10px;
+}
+.grid-details{
+    height: 80%;
+    width: 98%;
+    display: grid;
+    grid-template-columns: 10% 30% 12% 15% 12% 15%;
+    column-gap: 10px;
+    padding-left: 15px;
+}
+.container-a{
+    height: 90%;
+    margin-top: 15px;
+    justify-content: center;
+}
+.container-b{
+    height: 100%;
+    text-align:left;
+}
+.date-info{
+    margin-top: 25px;
+    padding-top: 5px;
+    padding-bottom: 5px;
+    margin-left: 15px;
+    height: 40px;
+    width: 80%;
+}
+.cost-info{
+    font-size: 50px;
+    text-align-last: center;
+    height: 60%;
+    margin-top: 15px;
+    padding-top: 15px;
+    overflow: hidden;
+}
+.rating{
+    display: flex;
+    width: max-content;
+    height: max-content;
+    padding-top: 5px;
+    padding-bottom: 5px;
+    justify-content: center;
+    margin-top: 25px;
+    margin-left: 10px;
+}
+/* From Uiverse.io by andrew-demchenk0 */ 
+.rating:not(:checked) > input {
+    position: absolute;
+    appearance: none;
+  }
+  
+  .rating:not(:checked) > label {
+    float: right;
+    cursor: pointer;
+    font-size: 30px;
+    color: #666;
+  }
+  
+  .rating:not(:checked) > label:before {
+    content: '★';
+  }
+  
+  .rating > input:checked + label:hover,
+  .rating > input:checked + label:hover ~ label,
+  .rating > input:checked ~ label:hover,
+  .rating > input:checked ~ label:hover ~ label,
+  .rating > label:hover ~ input:checked ~ label {
+    color: #e58e09;
+  }
+  
+  .rating:not(:checked) > label:hover,
+  .rating:not(:checked) > label:hover  ~label {
+    color: #ff9e0b;
+  }
+  
+  .rating > input:checked ~ label {
+    color: #ffa723;
+  }
+  /* From Uiverse.io by andrew-demchenk0 */ 
+.button {
+  position: static;
+    width: 150px;
+    height: 80px;
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+    border: 1px solid #34974d;
+    background-color: #3aa856;
+  }
+  
+  .button, .button__icon, .button__text {
+    transition: all 0.3s;
+  }
+  
+  .button .button__text {
+    transform: translateX(30px);
+    color: #fff;
+    font-weight: 600;
+  }
+  
+  .button .button__icon {
+    position: absolute;
+    transform: translateX(109px);
+    height: inherit;
+    width: 39px;
+    background-color: #34974d;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+  
+  .button .svg {
+    width: 30px;
+    stroke: #fff;
+  }
+  
+  .button:hover {
+    background: #34974d;
+  }
+  
+  .button:hover .button__text {
+    color: transparent;
+  }
+  
+  .button:hover .button__icon {
+    width: 148px;
+    transform: translateX(0);
+  }
+  
+  .button:active .button__icon {
+    background-color: #2e8644;
+  }
+  
+  .button:active {
+    border: 1px solid #13311b;
+  }
+
+.stars{
+    height: 32px;
+    width: 140px;
+    background: transparent;
+    margin-top: 28px;
+  }
+
+  @media screen and (min-width: 800px) {
+    body,.secondnavbar,.team-details-container{
+      width:screen;
+    }
+    .team{
+      max-width: 500%;
+    }
+    .container-a{
+      flex:1;
+    }
+    .container-b{
+      flex: 2;
+    }
+    
+ }
+ @media screen and (max-width: 800px) {
+  body,.secondnavbar,.team-details-container{
+    width:100%;
+  }
+  .team{
+    max-width: 500%;
+  }
+  .container-a{
+    flex:1;
+  }
+  .container-b{
+    flex: 2;
+  }
+  
+}
+  
+  
+  

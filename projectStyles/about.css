@@ -1,0 +1,61 @@
+body, .headings{
+    background: url(projectImages/aboutbg.jpg);
+    background-size:cover;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+}
+.us{
+    text-wrap: wrap;
+    margin-bottom: 10px;
+    height: max-content;
+    padding-top: 3%;
+    padding-bottom: 3%;
+    padding-left: 15%;
+    padding-right: 15%;
+}
+.about-main, .headings{
+    font-size: 20px;
+}
+.services{
+    margin-top: 3px;
+    height: 420px;
+}
+
+.event{
+    height: 60px;
+    width: 150px;
+    background-color: #83C5BE;
+    padding: 8px;
+    margin-top: 4px;
+    margin-bottom: 10px;
+    margin-left: 60px;
+    margin-right: 3px;
+    border: 1px solid transparent;
+    border-radius: 3px;
+    justify-content: center;
+}
+.event:hover, .event:active{
+    background-color:#036b75;
+    color: whitesmoke;
+    font-weight: bold;
+    cursor: pointer;
+    transition: 0.2s 0s ease-in;
+}
+.services-right{
+    height: 400px;
+    background-color: #eddcd2;
+    width: 60%;
+    justify-content: center;
+    margin-left: 80px;
+}
+.h1-heading{
+    font-size: 40px;
+    font-weight: bolder;
+    justify-content: center;
+    height: 50px;
+}
+.why-us-image{
+    height: 430px;
+    width: 100%;
+    justify-content: center;
+}
