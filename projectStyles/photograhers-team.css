@@ -2,6 +2,9 @@ body{
   background-size: cover;
   background-repeat: no-repeat;
 }
+a{
+ text-decoration:none; 
+}
 .secondnavbar{
     height: 90px;
     width: 100%;
