@@ -25,6 +25,31 @@ body{
     height: 90px;
     z-index: 3;
 }
+@media(max-width:800px){
+   .slideshow-container{
+      margin-top: 60px;
+      font-size: smaller;
+   }
+   .prev,
+.next {
+    top: 50%;
+    width: 8px;
+    height: 15px;
+    padding: 5px;
+    margin-top: -2px;
+    color: white;
+    font-weight: bold;
+    font-size: 12px;
+    transition: background-color 0.3s ease;
+    margin-left: 2px;
+    margin-right: 2px;
+    
+    /* Green color */
+    border: none;
+    transform: translateY(-50%);
+    /* Center vertically */
+}
+  }
 
 
 
