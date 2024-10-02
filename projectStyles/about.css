@@ -8,8 +8,8 @@ body, .headings{
     text-wrap: wrap;
     margin-bottom: 10px;
     height: max-content;
-    padding-top: 3%;
-    padding-bottom: 3%;
+    padding-top: 1%;
+    padding-bottom: 1%;
     padding-left: 15%;
     padding-right: 15%;
 }
@@ -24,7 +24,7 @@ body, .headings{
 .event{
     height: 60px;
     width: 150px;
-    background-color: #83C5BE;
+    background-color: #ff5d5d;
     padding: 8px;
     margin-top: 4px;
     margin-bottom: 10px;
@@ -35,7 +35,7 @@ body, .headings{
     justify-content: center;
 }
 .event:hover, .event:active{
-    background-color:#036b75;
+    background-color:#ff0000;
     color: whitesmoke;
     font-weight: bold;
     cursor: pointer;
@@ -43,7 +43,10 @@ body, .headings{
 }
 .services-right{
     height: 400px;
-    background-color: #eddcd2;
+    background-image:url(projectImages/servicesbg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    box-shadow: 3px 3px 3px 3px rgb(255, 255, 255);
     width: 60%;
     justify-content: center;
     margin-left: 80px;
