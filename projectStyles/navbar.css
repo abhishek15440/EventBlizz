@@ -30,12 +30,13 @@
 .navbar-button{
     height: 50px;
     background: transparent;
-    width:110px;
+    width:121px;
     border: 1.5px solid transparent;
     color: rgb(250, 255, 255);
     border-radius: 5px;
     padding-left: 2px;
     padding-right: 2px;
+    font-family:Poppins;
 }
 .navbar-button:hover{
     border-color: rgb(250, 255, 255);
