@@ -25,34 +25,6 @@ body{
     height: 90px;
     z-index: 3;
 }
-@media(max-width:800px){
-   .slideshow-container{
-      margin-top: 60px;
-      font-size: smaller;
-   }
-   .prev,
-.next {
-    top: 50%;
-    width: 8px;
-    height: 15px;
-    padding: 5px;
-    margin-top: -2px;
-    color: white;
-    font-weight: bold;
-    font-size: 12px;
-    transition: background-color 0.3s ease;
-    margin-left: 2px;
-    margin-right: 2px;
-    
-    /* Green color */
-    border: none;
-    transform: translateY(-50%);
-    /* Center vertically */
-}
-  }
-
-
-
 .quote-slide {
     display: none;
     text-align: center;
@@ -70,11 +42,11 @@ body{
 }
 
 .quote-slide footer {
-    color: #007bff;
-    /* Blue color for contrast */
-    font-style: italic;
-    margin-top: 10px;
-    font-weight: bolder;
+   color: #007bff;
+   /* Blue color for contrast */
+   font-style: italic;
+   margin-top: 10px;
+   font-weight: bolder;
 
 }
 
@@ -109,20 +81,8 @@ body{
     background-color: #3b473e;
     /* Darker green on hover */
 }
-
-@media screen and (max-width: 768px) {
-   .quote{
-      width: 100%;
-   }
-
-    .prev,
-    .next {
-        padding: 12px;
-        font-size: 16px;
-    }
-}
 .card {
-    width: 250px;
+    width: 200px;
     height: 254px;
     border-top: 3px solid transparent;
     box-shadow: 0 3px 10px rgb(0 0 0 0.2);
@@ -178,15 +138,56 @@ body{
     margin-bottom: 20px;
     object-fit: contain;
   }
-  @media(max-width:800px){
-   .event-cards{
-      margin-left: 30px;
-      grid-template-columns: 1fr 1fr;
-      grid-template-rows: 1fr 1fr 1fr 1fr;
+  @media(max-width:900px){
+   .quote{
+      width: 100%;
    }
-  }
 
-  @media(min-width:1000px){
+    .prev,.next {
+        padding: 12px;
+        font-size: 16px;
+    }
+    .slideshow-container{
+      margin-top: 60px;
+      font-size: smaller;
+      height: 100px;
+   }
+   .quote-slide blockquote {
+      font-size: 0.8em;
+  }
+   .prev,
+   .next {
+      top: 50%;
+      width: 15px;
+      height: 40px;
+      padding: 5px;
+      margin-top: -2px;
+      color: white;
+      font-weight: bold;
+      font-size: 12px;
+      transition: background-color 0.3s ease;
+      margin-left: 2px;
+      margin-right: 2px;
+      
+      /* Green color */
+      border: none;
+      transform: translateY(-50%);
+      /* Center vertically */
+   }
+   .quote-slide footer {
+      color: #007bff;
+      /* Blue color for contrast */
+      font-style: italic;
+      margin-top: 10px;
+      font-weight: bolder;
+      font-size: 12px;
+  
+  }
+   .event-cards{
+      margin-left: 10px;
+      grid-template-columns: 1fr 1fr;
+      column-gap: 10px;
+   }
    body{
       width: 100%;
    }
