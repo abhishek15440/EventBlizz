@@ -1,0 +1,224 @@
+*{
+    margin: 0;
+    padding: 0;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 16px;
+    border: 0;
+}
+body{
+   background-image: url(projectImages/bodybg.jpg);
+   background-size:cover;
+   background-repeat:no-repeat;
+   background-attachment: fixed;
+}
+.quote{
+    border-radius: 50px;
+    font-family: poppins;
+    width: 100%;
+}
+.slideshow-container {
+    margin-top: 70px;
+    position: relative;
+    width: 100%;
+    background:transparent;
+    padding: 20px;
+    height: 90px;
+    z-index: 3;
+}
+.quote-slide {
+    display: none;
+    text-align: center;
+    padding: 20px;
+}
+
+.quote-slide blockquote {
+    font-size: 1.5em;
+    margin: 0;
+    color: #333;
+    line-height: 2;
+    word-wrap: break-word;
+    font-weight: bolder;
+    /* Ensure long words break */
+}
+
+.quote-slide footer {
+   color: #007bff;
+   /* Blue color for contrast */
+   font-style: italic;
+   margin-top: 10px;
+   font-weight: bolder;
+
+}
+
+.prev,
+.next {
+    cursor: pointer;
+    position: absolute;
+    top: 50%;
+    width: 15px;
+    height: 40px;
+    padding: 16px;
+    margin-top: -12px;
+    color: white;
+    font-weight: bold;
+    font-size: 18px;
+    transition: background-color 0.3s ease;
+    margin-left: 20px;
+    margin-right: 20px;
+    
+    /* Green color */
+    border: none;
+    transform: translateY(-50%);
+    /* Center vertically */
+}
+
+.next {
+    right: 0;
+}
+
+.prev:hover,
+.next:hover {
+    background-color: #3b473e;
+    /* Darker green on hover */
+}
+.card {
+    width: 200px;
+    height: 254px;
+    border-top: 3px solid transparent;
+    box-shadow: 0 3px 10px rgb(0 0 0 0.2);
+    position: relative;
+    border-top-left-radius: 5%;
+    border-top-right-radius: 5%;
+    overflow: hidden;
+
+  }
+  
+  .remove-when-use {
+    text-align: center;
+    width: 100%;
+    color: black;
+    top: 85px;
+    font-weight: bold;
+  }
+  
+  .details > p {
+    font-size: .8em;
+  }
+  
+  .details > label {
+    font-weight: bold;
+  }
+  
+  .details {
+    color: white;
+    width: 92.2%;
+    background-color: rgba(0,0,0,0.5);
+    position: absolute;
+    bottom: 0;
+    height: 15px;
+    transition: height .5s ease-in-out;
+    padding: 0.6em;
+    overflow: hidden;
+    
+  }
+  
+  .card:hover > .details{
+    height: 6.7em;
+    cursor: pointer;
+  }
+  .card:hover{
+    cursor: pointer;
+  }
+  .event-cards{
+    justify-content: center;
+    display: grid;
+    grid-template-columns: max-content max-content max-content max-content;
+    column-gap:70px;
+    row-gap: 30px;
+    width: 100%;
+    margin-bottom: 20px;
+    object-fit: contain;
+  }
+  @media(max-width:900px){
+   .quote{
+      width: 100%;
+   }
+
+    .prev,.next {
+        padding: 12px;
+        font-size: 16px;
+        border: 1px solid transparent;
+        border-radius: 50%;
+    }
+    .slideshow-container{
+      margin-top: 60px;
+      font-size: smaller;
+      height: 100px;
+   }
+   .quote-slide blockquote {
+      font-size: 0.8em;
+  }
+   .prev,
+   .next {
+      top: 50%;
+      width: 15px;
+      height: 40px;
+      padding: 5px;
+      margin-top: -2px;
+      color: white;
+      font-weight: bold;
+      font-size: 12px;
+      transition: background-color 0.3s ease;
+      margin-left: 2px;
+      margin-right: 2px;
+      
+      /* Green color */
+      border: none;
+      transform: translateY(-50%);
+      /* Center vertically */
+   }
+   .details {
+      width: 94.2%;
+      overflow: hidden;
+      
+    }
+   .event-cards{
+      grid-template-columns: 1fr 1fr;
+      column-gap: 10px;
+      width: 95%;
+      margin-left: 25px;
+   }
+  }
+ #Wedding{
+    background-image: url(projectImages/marriage1.jpeg);
+    animation: SlideInLeft 0.5s ease-in;
+ }
+ #Birthday{
+    background-image: url(projectImages/birthday.jpeg);
+    animation: SlideInLeft 0.5s ease-in ;
+ }
+ #House_Warming{
+    background-image: url(projectImages/house.jpeg);
+    animation: SlideInLeft 0.5s ease-in;
+ }
+ #Social_Event{
+    background-image: url(projectImages/social.jpeg);
+    animation: SlideInLeft 0.5s ease-in;
+ }
+ #Office_Event{
+    background-image: url(projectImages/office.jpeg);
+    animation: SlideInLeft 0.5s ease-in 0.5s;
+    
+ }
+ #Inaugration{
+    background-image: url(projectImages/inaugration.jpeg);
+    animation: SlideInLeft 0.5s ease-in 0.5s;
+ }
+ #College_Event{
+    background-image: url(projectImages/college.jpeg);
+    animation: SlideInLeft 0.5s ease-in 0.5s;
+ }
+ #Festive_Event{
+    background-image: url(projectImages/festive.jpeg);
+    animation: SlideInLeft 0.5s ease-in 0.5s;
+ }
