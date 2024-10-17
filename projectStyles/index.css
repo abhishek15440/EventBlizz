@@ -83,8 +83,8 @@ body{
 }
 .card {
     width: 200px;
-    height: 254px;
-    border-top: 3px solid transparent;
+    height: 280px;
+    border-top: 1px solid transparent;
     box-shadow: 0 3px 10px rgb(0 0 0 0.2);
     position: relative;
     border-top-left-radius: 5%;
@@ -97,7 +97,7 @@ body{
     text-align: center;
     width: 100%;
     color: black;
-    top: 85px;
+    top: 70px;
     font-weight: bold;
   }
   
@@ -123,7 +123,7 @@ body{
   }
   
   .card:hover > .details{
-    height: 6.7em;
+    height: 6.9em;
     cursor: pointer;
   }
   .card:hover{
