@@ -129,7 +129,7 @@ buildPhotographersTeam.forEach((organization) =>{
                 <div class="container-b details-container">
                     <label><b>Contact:</b></label><span class="${organization.class}-contact">${organization.details.contact}</span><br>
 
-                    <label><b>Email:</b></label><span class="${organization.class}-mail">${organization.details.mail}<span><br>
+                    <label><b>Email:</b></label><span class="${organization.class}-mail">${organization.details.mail}</span><br>
                     <label><b>Location:</b></label>
                     
                     <span class="${organization.class}-location">${organization.details.location}<br><br></span>
