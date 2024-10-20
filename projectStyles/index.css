@@ -6,7 +6,7 @@
     border: 0;
 }
 body{
-   background-image: url(projectImages/bodybg.jpg);
+   background-image: url(projectImages/backgrounds/bodybg.jpg);
    background-size:cover;
    background-repeat:no-repeat;
    background-attachment: fixed;
@@ -83,8 +83,8 @@ body{
 }
 .card {
     width: 200px;
-    height: 280px;
-    border-top: 1px solid transparent;
+    height: 254px;
+    border-top: 3px solid transparent;
     box-shadow: 0 3px 10px rgb(0 0 0 0.2);
     position: relative;
     border-top-left-radius: 5%;
@@ -97,7 +97,7 @@ body{
     text-align: center;
     width: 100%;
     color: black;
-    top: 70px;
+    top: 85px;
     font-weight: bold;
   }
   
@@ -123,7 +123,7 @@ body{
   }
   
   .card:hover > .details{
-    height: 6.9em;
+    height: 6.7em;
     cursor: pointer;
   }
   .card:hover{
@@ -190,35 +190,35 @@ body{
    }
   }
  #Wedding{
-    background-image: url(projectImages/marriage1.jpeg);
+    background-image: url(projectImages/eventservices/marriage1.jpeg);
     animation: SlideInLeft 0.5s ease-in;
  }
  #Birthday{
-    background-image: url(projectImages/birthday.jpeg);
+    background-image: url(projectImages/eventservices/birthday.jpeg);
     animation: SlideInLeft 0.5s ease-in ;
  }
  #House_Warming{
-    background-image: url(projectImages/house.jpeg);
+    background-image: url(projectImages/eventservices/house.jpeg);
     animation: SlideInLeft 0.5s ease-in;
  }
  #Social_Event{
-    background-image: url(projectImages/social.jpeg);
+    background-image: url(projectImages/eventservices/social.jpeg);
     animation: SlideInLeft 0.5s ease-in;
  }
  #Office_Event{
-    background-image: url(projectImages/office.jpeg);
+    background-image: url(projectImages/eventservices/office.jpeg);
     animation: SlideInLeft 0.5s ease-in 0.5s;
     
  }
  #Inaugration{
-    background-image: url(projectImages/inaugration.jpeg);
+    background-image: url(projectImages/eventservices/inaugration.jpeg);
     animation: SlideInLeft 0.5s ease-in 0.5s;
  }
  #College_Event{
-    background-image: url(projectImages/college.jpeg);
+    background-image: url(projectImages/eventservices/college.jpeg);
     animation: SlideInLeft 0.5s ease-in 0.5s;
  }
  #Festive_Event{
-    background-image: url(projectImages/festive.jpeg);
+    background-image: url(projectImages/eventservices/festive.jpeg);
     animation: SlideInLeft 0.5s ease-in 0.5s;
  }
