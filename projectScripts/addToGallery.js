@@ -1,35 +1,35 @@
 let finalHTML='';
 const galleryList =[
     {
-        image:'projectStyles/projectImages/birthdaygallery.webp',
+        image:'projectStyles/projectImages/eventservices/birthdaygallery.jpg',
         name:'xyz birthday',
         date:'',
         description:'description of Event',
         location:'Hyderabad,India'
     },
     {
-        image:'projectStyles/projectImages/marriagegallery.jpg',
+        image:'projectStyles/projectImages/eventservices/marriagegallery.jpg',
         name:'xyz marriage',
         date:'',
         description:'description of Event',
         location:'Hyderabad,India'
     },
     {
-        image:'projectStyles/projectImages/officegallery.jpg',
+        image:'projectStyles/projectImages/eventservices/officegallery.jpg',
         name:' office event',
         date:'',
         description:'description of Event',
         location:'Hyderabad,India'
     },
     {
-        image:'projectStyles/projectImages/collegegallery.jpg',
+        image:'projectStyles/projectImages/eventservices/collegegallery.jpg',
         name:'MRCET College Event',
         date:'',
         description:'description of Event',
         location:'Hyderabad,India'
     },
     {
-        image:'projectStyles/projectImages/collegegallery.jpg',
+        image:'projectStyles/projectImages/eventservices/collegegallery.jpg',
         name:'promotional Event',
         date:'',
         description:'description of Event',
