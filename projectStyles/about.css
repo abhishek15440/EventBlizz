@@ -54,6 +54,9 @@ body, .headings{
     background-repeat: no-repeat;
     box-shadow: 3px 3px 3px 3px rgb(255, 255, 255);
     width: 60%;
+    padding-left: 10px;
+    padding-right:10px;
+    line-height:19px;
     justify-content: center;
     margin-left: 80px;
     border: 2px solid transparent;
