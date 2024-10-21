@@ -16,7 +16,7 @@ const galleryList =[
     },
     {
         image:'projectStyles/projectImages/eventservices/officegallery.jpg',
-        name:' office event',
+        name:' Tech Solutions office event',
         date:'16 June 2023',
         description:'The dynamic corporate retreat for Tech Solutions took place at a serene venue in Gachibowli, Hyderabad, featuring team-building activities and workshops. Attendees engaged in collaboration and creativity, culminating in a relaxing evening gala. Delicious local cuisine and live entertainment made for an inspiring and connected experience!',
         location:'Hyderabad,India'
@@ -30,7 +30,7 @@ const galleryList =[
     },
     {
         image:'projectStyles/projectImages/eventservices/collegegallery.jpg',
-        name:'promotional Event',
+        name:'movie promotional Event',
         date:'27 Nov 2023',
         description:'Organizing the movie promotion event for "Animal" at MRCET in Hyderabad was an exhilarating experience. We coordinated with the cast for engaging Q&As and interactive sessions, ensuring students felt connected to their favorite stars. The energy in the auditorium was electric.',
         location:'Hyderabad,India'
