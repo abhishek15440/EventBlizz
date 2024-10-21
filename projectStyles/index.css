@@ -125,7 +125,7 @@ body{
   .card:hover > .details{
     height: 12em;
     cursor: pointer;
-    line-height: 17px;
+    line-height: 18px;
   }
   .card:hover{
     cursor: pointer;
@@ -146,7 +146,8 @@ body{
    }
       .card:hover > .details{
          height: 14em;
-          line-height: 14px;
+          line-height: 16px;
+          font-size: 14px;
       }
     .prev,.next {
         padding: 12px;
