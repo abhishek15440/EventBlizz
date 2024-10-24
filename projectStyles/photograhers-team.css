@@ -1,0 +1,334 @@
+body{
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+h3{
+  font-size: 20px;
+  margin-bottom: 5px;
+  margin-top: 2px;
+
+}
+.secondnavbar{
+    height: 90px;
+    width: 100%;
+    position:fixed;
+    top: 70px;
+    justify-content: center;
+    text-decoration:underline black;
+    box-shadow: 10px 5px 5px 5px rgb(136, 130, 130);
+    background-color: rgb(48, 44, 44);
+    text-decoration: none;
+    z-index: 1;
+}
+.sec-btn{
+    height: 80%;
+    width: 20%;
+    border: 1px solid transparent;
+    background: transparent;
+}
+.sec-btn:hover{
+    cursor: pointer;
+}
+.team-details-container{
+
+  
+    height: max-content;
+    width: 100%;
+    padding-top: 10px;
+    padding-bottom: 20px;
+    display: grid;
+    grid-template-columns: 1fr;
+    margin-top: 165px;
+}
+.team{
+  min-height: 220px;
+    height: max-content;
+    width: 100%;
+    max-width: 100%;
+    padding-top: 3px;
+    padding-bottom: 10px;
+    margin-top: 3px;
+    margin-bottom: 3px;
+    background-image: url(projectImages/backgrounds/bg2.jpeg);
+    background-size: cover;
+}
+.org-photo{
+    float: left;
+    height: 90%;
+    width: 90%;
+    margin: 5px;
+}
+.grid-details{
+    height: 80%;
+    width: 98%;
+    display: grid;
+    grid-template-columns: 10% 30% 12% 15% 12% 15%;
+    column-gap: 10px;
+    padding-left: 15px;
+}
+.container-b{
+    height: 100%;
+    text-align:left;
+}
+.date-info{
+    margin-top: 25px;
+    padding-top: 5px;
+    padding-bottom: 5px;
+    margin-left: 15px;
+    height: 40px;
+    width: 80%;
+}
+.price-container,.rating-container,.button-container{
+  height: 90%;
+  margin-top: 15px;
+  justify-content: center;
+}
+.cost-info{
+    font-size: 55px;
+    text-align-last: center;
+    height: 60%;
+    margin-top: 15px;
+    padding-top: 15px;
+    overflow: hidden;
+}
+.rating{
+    display: flex;
+    width: max-content;
+    height: max-content;
+    padding-top: 5px;
+    padding-bottom: 5px;
+    justify-content: center;
+    margin-top: 25px;
+    margin-left: 10px;
+}
+.button {
+  position: static;
+    width: 150px;
+    height: 80px;
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+    border: 1px solid #34974d;
+    background-color: #3aa856;
+  }
+  
+  .button, .button__icon, .button__text {
+    transition: all 0.3s;
+  }
+  
+  .button .button__text {
+    transform: translateX(30px);
+    color: #fff;
+    font-weight: 600;
+  }
+  
+  .button .button__icon {
+    position: absolute;
+    transform: translateX(109px);
+    height: inherit;
+    width: 39px;
+    background-color: #34974d;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+  
+  .button .svg {
+    width: 30px;
+    stroke: #fff;
+  }
+  
+  .button:hover {
+    background: #34974d;
+  }
+  
+  .button:hover .button__text {
+    color: transparent;
+  }
+  
+  .button:hover .button__icon {
+    width: 148px;
+    transform: translateX(0);
+  }
+  
+  .button:active .button__icon {
+    background-color: #2e8644;
+  }
+  
+  .button:active {
+    border: 1px solid #13311b;
+  }
+
+.stars{
+    height: 32px;
+    width: 140px;
+    background: transparent;
+    margin-top: 28px;
+  }
+  @media(max-width:900px){
+    *{
+      font-size: 12px ;
+    }
+    h3{
+      font-size: 16px;
+      margin-bottom: 5px;
+    }
+    .cam-info{
+      font-size: 2vw;
+    }
+    .secondnavbar{
+      height: 80px;
+      width: 100%;
+      position:fixed;
+      top: 70px;
+      justify-content:space-evenly;
+      text-decoration:underline black;
+      box-shadow: 5px 2.5px 2.5px 2.5px rgb(136, 130, 130);
+      background-color: white;
+      z-index: 1;
+  }
+  .sec-btn{
+      height: 80%;
+      width: 20%;
+      border: 1px solid transparent;
+      background: transparent;
+  }
+  #Photographer{
+    content: url(projectImages/symbols/photographersymbol.jpg);
+    z-index: 2000;
+    height: 50px;
+    width: 100px;
+    mix-blend-mode: normal;
+   }
+   #venue{
+    content: url(projectImages/symbols/venuesymbol.jpg);
+    height: 50px;
+    width: 100px;
+    z-index: 2000;
+   }
+   #decorator{
+   content: url(projectImages/symbols/decoratorsymbol.jpg);
+   height: 50px;
+    width: 100px;
+    z-index: 2000;
+   }
+   #catering{
+    content: url(projectImages/symbols/cateringsymbol.jpg);
+    height: 50px;
+    width: 100px;
+    z-index: 2000;
+   }
+.grid-details{
+  display: grid;
+  padding-left: 0px;
+  grid-template-columns: 1fr 2.1fr 1.1fr 1fr 1fr 1fr;
+}
+.details-container{
+  margin-top: 15px;
+}
+.cost-info{
+  font-size: 28px;
+  text-align-last: center;
+  height: 60%;
+  margin-top: 25px;
+  padding-top: 5px;
+}
+.team{
+  width: 100%;
+}
+.date-info{
+  width: 50px;
+  }
+  .date-container{
+    margin-top: 15px;
+  }
+  .org-photo{
+    margin:0;
+  }
+img.stars{
+  width: 80px;
+}
+.button {
+  position: static;
+    width: max-content;
+    height: 80px;
+    width: 80px;
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+    border: 1px solid #34974d;
+    background-color: #3aa856;
+  }
+  
+  .button, .button__icon, .button__text {
+    transition: all 0.3s;
+  }
+  
+  .button .button__text {
+    transform: translateX(10px);
+    color: #fff;
+    font-weight: 600;
+  }
+  
+  .button .button__icon {
+    position: absolute;
+    transform: translateX(60px);
+    height: inherit;
+    width:20px;
+    background-color: #34974d;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+  
+  .button .svg {
+    width: 18px;
+    stroke: #fff;
+  }
+  
+  .button:hover {
+    background: #34974d;
+  }
+  
+  .button:hover .button__text {
+    color: transparent;
+  }
+  
+  .button:hover .button__icon {
+    width: 80px;
+    transform: translateX();
+  }
+  
+  .button:active .button__icon {
+    background-color: #2e8644;
+  }
+  
+  .button:active {
+    border: 1px solid #13311b;
+  }
+  .org-photo{
+    height: 45%;
+    width: 85%;
+}
+  }
+  .button-grid{
+    display: grid;
+    grid-template-rows: max-content max-content;
+    row-gap: 20px;
+  }
+  .added-to-team{
+    opacity: 0;
+    justify-content: center;
+    font-size: 20px;
+    font-family:Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+  }
+  .added-to-team img {
+    height: 20px;
+    margin-right: 5px;
+    
+  }
+  .added-to-team-visible{
+    opacity: 1;
+  }
+    
+  
