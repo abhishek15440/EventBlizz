@@ -1,4 +1,4 @@
-
+import { cart } from "./buildateam";
 const buildPhotographersTeam = [ 
     {
    class:'js-photographer-ks-studio',
