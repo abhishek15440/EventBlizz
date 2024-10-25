@@ -12,6 +12,8 @@ body, .headings{
     padding-bottom: 1%;
     padding-left: 10%;
     padding-right: 10%;
+    line-height: 40px;
+    font-size: 20px;
 }
 .about-main, .headings{
     font-size: 20px;
@@ -59,6 +61,9 @@ body, .headings{
     border: 2px solid transparent;
     border-radius: 10px;
     color: rgb(0, 0, 0);
+    line-height: 40px;
+    padding-left: 35px;
+    padding-right: 35px;
 }
 .h1-heading{
     font-size: 40px;
@@ -103,6 +108,7 @@ body, .headings{
     }
     .services-right{
         height: 100%;
+        line-height: 24px;
     }
     .h1-heading{
         font-size: 25px;
