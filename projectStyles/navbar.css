@@ -3,7 +3,7 @@
     margin-top: 0;
     height: 70px;
     width:100%;
-    background-color: rgb(255, 192, 192);
+    background-color: #ff0055;
     color: black;
     font-family: Montserrat;
     justify-content: space-between;
@@ -30,7 +30,7 @@
 .navbar-button{
     height: 50px;
     background: transparent;
-    width:110px;
+    width:116px;
     border: 1.5px solid transparent;
     color: rgb(250, 255, 255);
     border-radius: 5px;
@@ -38,9 +38,10 @@
     padding-right: 2px;
 }
 .navbar-button:hover{
-    border-color: rgb(250, 255, 255);
+    color: #ff0055;
     cursor: pointer;
-    background-color: rgb(61, 146, 231);
+    background-color: whitesmoke;
+    border-radius: none;
 
     transition:background-color 50ms ease-in 0s;
 }
