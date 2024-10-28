@@ -13,6 +13,7 @@
 
 </head>
 <body>
+   
     <div class="navbar flex-properties">
 
 
@@ -61,13 +62,18 @@
 
     </div>
     <div class="secondnavbar flex-properties">
-        <button class="sec-btn" onclick="PhotographerDetails();"><a id="Photographer">Photographers</a></button>
-        <button class="sec-btn"  onclick="VenueDetails();"><a id="venue">Venue</a></button>
-        <button class="sec-btn" onclick="DecoratorDetails();"><a href="#"  id="decorator">Decorator</a></button>
-        <button class="sec-btn"  onclick="CatererDetails();"><a href="#" id="catering">caterer</a></button>
+        <button class="sec-btn Photographers" ><a id="Photographer">Photographers</a></button>
+        <button class="sec-btn Venue"><a id="venue">Venue</a></button>
+        <button class="sec-btn Decorator"><a href="#"  id="decorator">Decorator</a></button>
+        <button class="sec-btn caterer"><a href="#" id="catering">caterer</a></button>
     </div>
 
-    <div class="team-details-container">
+    <div class="team-details-container special">
+        <div class="display-info">
+            <p>Choose a Category</p>
+        </div>
+    </div>
+        
     </div>
     <footer>
         <div class="footer-row">
@@ -114,7 +120,8 @@
         </div>
               
     </footer>
-    <script src="projectScripts/teams.js"></script>
-    <script src="projectScripts/buildateam.js"></script>
+    <script type="module" src="projectScripts/buildateam.js"></script>
+
+    
 </body>
 </html>
