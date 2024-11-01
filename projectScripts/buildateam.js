@@ -80,7 +80,10 @@ export function addtoteam(){
               productId: productId,
               date: resultdate,
               priceinK:(price*1000)
-          });         
+          });
+          console.log(cart);
+          savetoLocalStorage();
+          
       }
       else{
           alert('enter correct Date');
@@ -88,7 +91,6 @@ export function addtoteam(){
 }
           updateTeamTotal();
           savetoLocalStorage();
-          totalCost();
       });
       });
 };
@@ -364,26 +366,26 @@ addtoteam();
         });
     };
 
-    export function totalCost(){
-        let finalCost=0;
-        let notaxCost=0;
-        let shippingcost=0;
-        let platformFees=0;
-        let orderTotal=0;
-        cart.forEach((cartItem)=>{
-          let tempcost = cartItem.priceinK;
-          finalCost+=tempcost;
-          shippingcost+=2000;
-          notaxCost=(shippingcost+finalCost);
-          platformFees=(10/100 * notaxCost);
-          orderTotal=(finalCost+ shippingcost + platformFees);
-        });
-        console.log(finalCost);
-        document.querySelector('.js-team-cost').innerHTML=finalCost;
-        document.querySelector('.js-travel-cost').innerHTML=shippingcost;
-        document.querySelector('.js-no-tax-cost').innerHTML=notaxCost;
-        document.querySelector('.js-platform-fees').innerHTML=platformFees;
-        document.querySelector('.js-order-total').innerHTML=orderTotal;
-        
-  
-      };
+     export function totalCost(){
+      let finalCost=0;
+      let notaxCost=0;
+      let shippingcost=0;
+      let platformFees=0;
+      let orderTotal=0;
+      cart.forEach((cartItem)=>{
+        let tempcost = cartItem.priceinK;
+        finalCost+=tempcost;
+        shippingcost+=2000;
+        notaxCost=(shippingcost+finalCost);
+        platformFees=(10/100 * notaxCost);
+        orderTotal=(finalCost+ shippingcost + platformFees);
+      });
+      console.log(finalCost);
+      document.querySelector('.js-team-cost').innerHTML=finalCost;
+      document.querySelector('.js-travel-cost').innerHTML=shippingcost;
+      document.querySelector('.js-no-tax-cost').innerHTML=notaxCost;
+      document.querySelector('.js-platform-fees').innerHTML=platformFees;
+      document.querySelector('.js-order-total').innerHTML=orderTotal;
+      
+
+    };
