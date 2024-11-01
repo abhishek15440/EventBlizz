@@ -3,12 +3,15 @@
     margin-top: 0;
     height: 70px;
     width:100%;
-    background-color: rgb(255, 192, 192);
-    color: black;
+    background-color: #171717;
+    color: white;
     font-family: Montserrat;
     justify-content: space-between;
     position: fixed;
     z-index: 1000;      
+}
+a{
+  text-decoration: none;
 }
 .Left-part-navbar{
     justify-content:center;
@@ -25,7 +28,7 @@
 }
 .right-part-navbar{
     justify-content:center;
-    width: 22%;
+    width: 24%;
 }
 .navbar-button{
     height: 50px;
@@ -49,7 +52,7 @@
     display: flex;
     align-items: center;
     position: relative;
-    margin-left: 5px;
+    margin-left: 4px;
   }
   
   .cart-icon {
@@ -98,10 +101,6 @@
   
     display: flex;
     align-items: center;
-  }
-  
-  .checkout-header-left-section {
-    width: 150px;
   }
 @media(max-width:1000px){
     .Left-part-navbar{
