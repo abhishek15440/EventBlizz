@@ -1,0 +1,96 @@
+footer{
+    background-color: black;
+    color: white;
+    bottom: 0;
+    width: 100%;
+    font-size: 16px;
+    position:relative;
+    height: 40%;
+
+ }
+ .a-foot{
+   text-decoration: none;
+   color: white;
+ }
+ .a-foot:hover{
+   color: yellow;
+   font-weight: bolder;
+ }
+ .symbols{
+   display: grid;
+   grid-template-columns: max-content;
+   column-gap: 18 px;
+ }
+ .footer-row{
+    display: grid;
+    grid-template-rows: max-content max-content;
+    row-gap: 0;
+    height: 98%;
+ }
+ .footer-column{
+    display:grid;
+    grid-template-columns: 2fr 1fr 1fr 2fr;
+ }
+ .info-footer{
+    padding-top: 10px;
+    height: 100%;
+ }
+ .useful-links{
+    padding-top: 10px;
+    text-align: center;
+    align-items: center;
+    height: 100%;
+    text-decoration:none;
+ }
+ .follow-us{
+    color: white;
+    height: 250px;
+    padding-top: 10px;
+    padding-left: 40px;
+    display: grid;
+    grid-template-columns: max-content max-content;
+    grid-template-rows: max-content max-content max-content max-content;
+    justify-content: space-evenly;
+    align-items: center;
+ }
+ li{
+    width: max-content;
+    font-family: Arial, Helvetica, sans-serif;
+    padding-left: 5px;
+    text-decoration: none;
+ }
+ h4{
+    font-size: 20px;
+    padding: 5px;
+ }
+ .fa-brands{
+    height: 22px;
+    padding: 5px;
+    margin-bottom: 5px;
+    align-items: center;
+ }
+.Names{
+    margin-left: -80px;
+    margin-top: 5px;
+    height: 28px;
+    text-align: center;
+   
+}
+.Names:hover,.fa-brands:hover{
+    cursor: pointer;
+}
+ .last-line{
+    margin-bottom: 0;
+    bottom: 0;
+    background-color: rgb(0, 0, 0);
+    color: rgb(250, 246, 246);
+    height: 20px;
+    width: 100%;
+    text-align: center;
+ }
+ .address{
+    text-align: center;
+    padding-top: 10px;
+    word-spacing: 12px;
+    height: 100%;
+ }   
