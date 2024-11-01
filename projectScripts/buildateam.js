@@ -1,27 +1,6 @@
 import {buildPhotographersTeam,buildVenueTeam,buildDecoratorTeam,buildCatererTeam} from '../data/data.js';
- //cart= JSON.parse(localStorage.getItem('cart'));
- export let cart=[
-    {
-        productId: 'js-photographer-ks-studio',
-        date: `04-11-2024`,
-        priceinK:30000
-    },
-    {
-        productId: 'js-venue-hyd-event-spaces',
-        date: `04-11-2024`,
-        priceinK: 100000
-    },
-    {
-        productId: 'js-decorator-elegant-event-decor',
-        date: `04-11-2024`,
-        priceinK: 10000
-    },
-    {
-        productId: 'js-venue-hyd-event-spaces',
-        date: `04-11-2024`,
-        priceinK: 45000
-    }
-];
+ export let cart= JSON.parse(localStorage.getItem('cart'));
+ 
 function getPrice(productId){
 const priceContainer = document.querySelector(`.${productId}-cost`);
 const price = priceContainer.innerHTML;
@@ -40,14 +19,21 @@ export function getDate(productId){
             }
             
         }
-
 export function updateTeamTotal(){
-  let cartQuantity=0;
-  cart.forEach((cartItem)=>{
-      cartQuantity++;
-      document.querySelector('.js-cart-quantity').innerHTML=cartQuantity;
-  });
-}
+            let cartQuantity=0;
+            if(cart.length==0){
+              document.querySelector('.js-cart-quantity').innerHTML=cartQuantity;
+            }
+            else{
+              cart.forEach((cartItem)=>{
+                cartQuantity++;
+                document.querySelector('.js-cart-quantity').innerHTML=cartQuantity;
+            });
+            }
+            
+};
+          updateTeamTotal();
+updateTeamTotal();
 const addedMessageTimeouts={};
 function timeoutForMessages(productId){
 
@@ -94,8 +80,7 @@ export function addtoteam(){
               productId: productId,
               date: resultdate,
               priceinK:(price*1000)
-          });
-          console.log(cart);
+          });         
       }
       else{
           alert('enter correct Date');
@@ -103,11 +88,12 @@ export function addtoteam(){
 }
           updateTeamTotal();
           savetoLocalStorage();
+          totalCost();
       });
       });
 };
 export function removeFromCart(productId){
-    const newCart=[];
+    let newCart=[];
     cart.forEach((cartItem)=>
     {
         if(productId!==cartItem.productId)
@@ -116,6 +102,8 @@ export function removeFromCart(productId){
         }
     })
     cart=newCart;
+    console.log(cart);
+    updateTeamTotal();
     savetoLocalStorage();
 };
 
@@ -375,3 +363,27 @@ addtoteam();
             }
         });
     };
+
+    export function totalCost(){
+        let finalCost=0;
+        let notaxCost=0;
+        let shippingcost=0;
+        let platformFees=0;
+        let orderTotal=0;
+        cart.forEach((cartItem)=>{
+          let tempcost = cartItem.priceinK;
+          finalCost+=tempcost;
+          shippingcost+=2000;
+          notaxCost=(shippingcost+finalCost);
+          platformFees=(10/100 * notaxCost);
+          orderTotal=(finalCost+ shippingcost + platformFees);
+        });
+        console.log(finalCost);
+        document.querySelector('.js-team-cost').innerHTML=finalCost;
+        document.querySelector('.js-travel-cost').innerHTML=shippingcost;
+        document.querySelector('.js-no-tax-cost').innerHTML=notaxCost;
+        document.querySelector('.js-platform-fees').innerHTML=platformFees;
+        document.querySelector('.js-order-total').innerHTML=orderTotal;
+        
+  
+      };
