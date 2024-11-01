@@ -1,16 +1,18 @@
-import {cart} from './buildateam.js';
-import { updateTeamTotal } from './buildateam.js';
+import {cart,removeFromCart, updateTeamTotal} from './buildateam.js';
+import { totalCost } from './buildateam.js';
 import { overallMembers as products} from '../data/data.js';
 let cartSummaryHTML='';
 let cartHTML='';
-updateTeamTotal();
+let cartQuantity=0;
+  cart.forEach((cartItem)=>{
+      cartQuantity++;
+    });
 cart.forEach((cartItem)=>{
         const productId = cartItem.productId;
         let matchingproduct;
         products.forEach((product)=>{
             if(productId === product.class){
                 matchingproduct=product;
-                console.log(matchingproduct.image);
                cartHTML=`<div class="cart-item-container js-cart-item-container-${cartItem.productId}">
         <div class="delivery-date">
           Event date: ${cartItem.date}
@@ -36,16 +38,33 @@ cart.forEach((cartItem)=>{
               </span>
             </div>
           </div>
-
+</div>
               </div>
             </div>
             `;
       cartSummaryHTML+=cartHTML;
-      console.log(cartSummaryHTML);
       document.querySelector('.js-order-summary').innerHTML=cartSummaryHTML;
-            }
-        });
-        
-        
+
+
+
+      document.querySelectorAll('.js-delete-link').forEach((link)=>
+        link.addEventListener('click',()=>{
+             //1.remove product from cart
+             //2.update html
+         
+             //getting which delete button was clicked
+             const productId = link.dataset.productId;
+             removeFromCart(productId); 
+             const container = document.querySelector(`.js-cart-item-container-${productId}`);
+             container.remove();
+             updateTeamQuantity();
+             totalCost();
+            }));
+    
+            }});  
     });
-  
+   
+    totalCost();
+    updateTeamTotal();
+
+    
