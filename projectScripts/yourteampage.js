@@ -57,7 +57,6 @@ cart.forEach((cartItem)=>{
              removeFromCart(productId); 
              const container = document.querySelector(`.js-cart-item-container-${productId}`);
              container.remove();
-             updateTeamQuantity();
              totalCost();
             }));
     
