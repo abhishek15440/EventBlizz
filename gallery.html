@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Gallery</title>
+    <link rel="stylesheet" href="projectStyles/general.css">
+    <link rel="stylesheet" href="projectStyles/navbar.css">
+    <link  rel="stylesheet" href="projectStyles/gallery.css">
+    <script src="https://kit.fontawesome.com/bc9229f27a.js" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="projectStyles/foot.css">
+    <script src="data/common.js"></script>
+
+</head>
+<body>
+  <script type="module">
+    import { updateTeamTotal } from '../projectScripts/buildateam.js';
+    updateTeamTotal();
+  </script>
+    <div class="navbar flex-properties">
+
+
+        <div class="Left-part-navbar logo flex-properties">
+            <a href="index.html"><img src="projectImages/image.png" alt="logo of event blizz" height="50px" width="70px"></a>
+        </div>
+
+        <div class="middle-part-navbar flex-properties">
+            <a href="gallery.html"><button class="navbar-button">Gallery</button></a>
+            <div class="dropdown"><a href="wedding.html">
+              <button class="navbar-button">
+                Our Services<i class="fa fa-caret-down"> </i>
+              </button>
+              <div class="dropdown-content">
+                <a href="wedding.html">Marriage</a>
+                <a href="Birthday.html">Birthday</a>
+                <a href="Social.html">Social Events</a>
+                <a href="Office.html">Office/Co-orporate Events</a>
+                <a href="College.html">College Events</a>
+                <a href="Festive.html">Festival Events</a>
+              </div></div></a>
+            <a href="about.html"><button class="navbar-button">About Us</button></a>
+            <div class="dropdown">
+              <a href="photographers-team.html"><button class="navbar-button">Build Team <i class="fa fa-caret-down"> </i> </button></a>
+              <div class="dropdown-content">
+                <a href="photographers-team.html">Marriage</a>
+                <a href="photographers-team.html">Birthday</a>
+                <a href="photographers-team.html">Social Events</a>
+                <a href="photographers-team.html">Office/Co-orporate Events</a>
+                <a href="photographers-team.html">College Events</a>
+                <a href="photographers-team.html">Festival Events</a>
+
+              </div>
+            </div>
+        </div>
+
+
+        <div class="right-part-navbar flex-properties">
+          <a href="signup.html"><button class="navbar-button">Sign-Up</button></a>
+          <a class="cart-link header-link" href="yourteampage.html">
+            <img class="cart-icon" src="projectImages/yourteam.jpg">
+            <div class="cart-quantity js-cart-quantity">0</div>
+            <div class="cart-text">Team</div>
+          </a>
+        </div>
+
+    </div>
+    <center><div class="heading">Gallery</div></center>
+    <div class="gallery-grid">
+    </div>
+    <script type="module" src="projectScripts/addToGallery.js"></script>
+
+    <footer>
+      <div class="footer-row">
+          <div class="footer-column">
+              <div class="info-footer">
+                  <center><h4>Celebration Hub</h4></center><br>
+                  <center><img src="projectImages/image.png" height="100px" width="100px"></center>
+                  <p style="margin-top: 12px;">
+                    Eventblizz brings your dream events to life! From intimate gatherings to grand celebrations, we craft unforgettable experiences with a spark of creativity and seamless organization. Let’s make your event shine!                  </p>
+              </div>
+              <div class="useful-links">
+                  <center><h4>Useful Links</h4></center><br>
+                  <center>
+                      <a href="index.html" class="a-foot">Home</a><br><br>
+                      <a href="about.html" class="a-foot">About Us</a><br><br>
+                      <a href="gallery.html" class="a-foot">Gallery</a><br><br>
+                      <a href="wedding.html" class="a-foot"> Our Services</a><br><br>
+                  </center>
+              </div>
+                <div class="follow-us">
+                    <center><h4>Follow Us</h4></center><br><br>
+
+                    <div class="symbols">
+                      
+                      <a href="#" class="a-foot"><i class="fa-brands fa-facebook"></i>FaceBook</a>
+                      <a href="#" class="a-foot"><i class="fa-brands fa-x-twitter"></i>Twitter</a>
+                      <a href="#" class="a-foot"><i class="fa-brands fa-instagram"></i>Instagram</a>
+                      <a href="#" class="a-foot"><i class="fa-brands fa-linkedin-in"></i>LinkedIn</a>
+                      <a href="#" class="a-foot"><i class="fa-solid fa-envelope"></i>Gmail</a>
+                      <a href="#" class="a-foot"><i class="fa-brands fa-github"></i>GitHub</a>
+              
+              </div>                   
+              </div>
+              <div class="address">
+                  <center><h4>Address</h4></center><br><br>
+                  <p class="address-info">
+                    <i class="fa-sharp fa-solid fa-location-dot fa-lg"></i> Hyderabad,india
+                  </p>
+              </div>
+          </div>
+
+          <div class="last-line">powered by  <i class="fa-solid fa-copyright"></i>  trademark</div>
+      </div>
+            
+  </footer>
+</body>
+</html>
