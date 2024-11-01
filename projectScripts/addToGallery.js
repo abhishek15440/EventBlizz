@@ -1,3 +1,5 @@
+import {updateTeamTotal} from './buildateam.js';
+updateTeamTotal();
 let finalHTML='';
 const galleryList =[
     {
