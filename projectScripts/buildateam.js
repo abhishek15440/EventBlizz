@@ -106,9 +106,6 @@ export function addtoteam(){
           savetoLocalStorage();
           
       }
-      else{
-          alert('enter correct Date');
-      }
 }
           updateTeamTotal();
           savetoLocalStorage();
