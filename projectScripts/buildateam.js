@@ -7,16 +7,37 @@ const price = priceContainer.innerHTML;
 return price;
 };
 
+function dateAlter(date){
+
+const year = date.getFullYear();
+const month = String(date.getMonth() + 1).padStart(2, '0'); // Months are zero-based, so add 1
+const day = String(date.getDate()).padStart(2, '0');
+const formattedDate = `${year}-${month}-${day}`;
+return formattedDate;
+}
+
 export function getDate(productId){
-    const dateInput = document.querySelector(`.${productId}-date`);
+    const dateInput = document.querySelector(`.${productId}-date`); 
     const DateEntered = dateInput.value;
-    const currentDate = new Date().toDateString();
-    if (Number(DateEntered) <= Number(currentDate) || DateEntered==''){
+    const currentDate = dateAlter(new Date());
+
+    if (DateEntered < currentDate){
+        alert('Invalid Date Input. Please Try Again...');
         return false;
     }
-            else{
-                return DateEntered;
-            }
+
+    else if (DateEntered == currentDate){
+        alert('Event Today. Can not Plan on Short Notices');
+        return false;
+    }
+
+    else if (DateEntered==''){
+        alert('Please Select Date and Try Again...');
+        return false;
+    }
+    else{
+        return DateEntered;
+    }
             
         }
 export function updateTeamTotal(){
